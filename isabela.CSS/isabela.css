@@ -1,0 +1,93 @@
+body {
+    background: url('https://img.freepik.com/fotos-premium/fondo-color-violeta-violeta-claro-fondo-degradado-borroso-abstracto-plantilla-banner_335640-3273.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 15px;
+}
+
+.link:hover, .active {
+    border-bottom: 2px solid #ccc;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.menu {
+    width: auto;
+    margin-left: auto; /* Alinha o contêiner do menu à direita */
+    height: 70px;
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens dentro do contêiner do menu à direita */
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens dentro do ul à direita */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: aqua;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+/* Estilos adicionais para responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu ul li {
+        margin: 5px 0;
+    }
+    .icon {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        width: 100px;
+        height: 40px;
+    }
+    .menu ul li a {
+        font-size: 12px;
+    }
+    .nav-menu ul li .link {
+        padding-bottom: 10px;
+    }
+}

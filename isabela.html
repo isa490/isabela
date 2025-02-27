@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site</title>
+    <link rel="stylesheet" href="C:/Users/NOTEBOOK/OneDrive/Documentos/isabela/isabela.CSS/isabela.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .wrapper {
+            width: 100%;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: transparent;
+            padding: 10px;
+        }
+        .navbar .icon img {
+            height: 145px; /* Ajuste o tamanho da logo conforme necessário */
+            width: center;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .menu ul li {
+            margin: 0 10px;
+        }
+        .menu ul li a {
+            color: rgb(216, 171, 228);
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .menu ul li a:hover, .menu ul li a.active {
+            background-color: #d3dae6;
+            border-radius: 4px;
+        }
+        .form-box {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            background-color: transparent;
+        }
+        .form-box .top {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .form-box .top header {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }   
+        .form-box .top span a {
+            color: #eff3f7;
+            text-decoration: none;
+        }
+        .form-box .input-box {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .form-box .input-box input {
+            width: calc(100% - 30px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-box .input-box i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+        }
+
+        /* Estilos adicionais para responsividade */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu ul li {
+                margin: 5px 0;
+            }
+            .navbar .icon img {
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .icon {
+                width: 100px;
+                height: 40px;
+            }
+            .form-box {
+                max-width: 100%;
+                padding: 10px;
+            }
+            .menu ul li a {
+                font-size: 12px;
+            }
+            .nav-menu ul li .link {
+                padding-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="c:/Users/NOTEBOOK/OneDrive/Imagens/Imagem_do_WhatsApp_de_2025-02-18_à_s__00.01.53_4019c0c1-removebg-preview.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="C:/Users/NOTEBOOK/OneDrive/Documentos/isabela/home/home.html" class="link active">HOME</a></li>
+                    <li><a href="C:/Users/NOTEBOOK/OneDrive/Documentos/isabela/home/about.html" class="link">ABOUT</a></li>
+                    <li><a href="C:/Users/NOTEBOOK/OneDrive/Documentos/isabela/home/service.html" class="link">SERVICE</a></li>
+                    <li><a href="C:/Users/NOTEBOOK/OneDrive/Documentos/isabela/home/desing.html" class="link">DESIGN</a></li>
+                    <li><a href="#" class="link">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------Form box------------------------------------->
+<div class="form-box">
+    <!-------------------------registration form--------------------------------------------->
+    <div class="registration-form" id="register">
+        <div class="top">
+            <span> Have an account? <a href="C:/Users/NOTEBOOK/OneDrive/Documentos/isabela/home/login.html">Login</a></span>
+            <header>Sign Up</header>
+        </div>
+        <div class="two-forms">
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Firstname">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Lastname">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
