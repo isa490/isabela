@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: rgb(216, 171, 228);
 }
 .login-box {
     background-color: #fff;
@@ -24,14 +24,14 @@ body {
     margin-bottom: 5px;
 }
 .login-box .input-box input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 .login-box .input-box input[type="submit"] {
     background-color: rgb(216, 171, 228);
-    color: #ccc;
+    color: #fff;
     border: none;
     cursor: pointer;
 }
