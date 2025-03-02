@@ -5,19 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="home.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            text-align: left;
+        }
+        .text {
+            max-width: 50%;
+        }
+        .image {
+            max-width: 50%;
+            height: auto;
+        }
+        .custom-button {
+            display: block;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .text, .image {
+                max-width: 100%;
+            }
+            .custom-button {
+                margin-top: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="text">
             <h2>Welcome to</h2>
             <h1>LojaExpress</h1>
-            <p>Este é um exemplo de texto que você pode utilizar para chamar a atenção dos visitantes do seu site. Adicione mais detalhes aqui conforme necessário.</p>
+        <p>Bem-vindo à LojaExpress! Sua loja online de confiança para compras fáceis e rápidas</p>
+        <button class="custom-button" onclick="openInNewTab('../isabela.html')">Join Now</button>
         </div>
         <div>
             <img class="image" src="pngtree-shopping-online-on-smart-phone-digital-online-communication-vector-png-image_31102332-removebg-preview.png" alt="Descrição da Imagem">
         </div>
     </div>
-    <button class="custom-button" onclick="openInNewTab('../isabela.html')">Join Now</button>
 
     <script>
         function openInNewTab(url) {

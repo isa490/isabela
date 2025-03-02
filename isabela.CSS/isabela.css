@@ -1,3 +1,14 @@
+/* Exemplo de media query para telas menores que 600px */
+@media (max-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
+
 body {
     background: url('https://img.freepik.com/fotos-premium/fondo-color-violeta-violeta-claro-fondo-degradado-borroso-abstracto-plantilla-banner_335640-3273.jpg');
     background-repeat: no-repeat;
