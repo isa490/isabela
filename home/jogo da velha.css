@@ -1,0 +1,43 @@
+body{
+    transition: background-color .1s ease-in-out;
+    background-color: #2b2b1e;
+}
+
+#app{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+table{
+    width: 500px;
+    height: 500px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+}
+
+td{
+    width: 33.3%;
+    height: 33.3%;
+    cursor: pointer;
+}
+
+
+.g1{
+    border-bottom: solid 1px #fff;
+    border-right: solid 1px #fff;
+}
+
+.g2{
+    border-bottom: solid 1px #fff;
+}
+
+.g3{
+    border-right: solid 1px #fff;
+}
